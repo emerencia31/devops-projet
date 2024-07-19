@@ -1,0 +1,15 @@
+{
+  "name": "devops-projet",
+  "version": "1.0.0",
+  "description": "Nous allons configurer des tests automatiques qui s'exécutent à chaque push sur la branche principale du repository GitHub  et Construire un conteneur Docker : À chaque changement réussi et test passé, construire une image Docker de l'application web.",
+  "main": "script.js",
+  "scripts": {
+     "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
