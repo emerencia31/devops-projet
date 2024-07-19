@@ -13,9 +13,6 @@ Ajoutez le repository GitHub : git config --global user.email "33767@Regis-tchic
 
 Poussez votre projet local vers GitHub :git push -u origin master
 
-# Creer les fichiers de l'application : index.html , style.css et scritp.js
-
-
 # Faire les tests
 Nous allons ajoutez une structure de tests avec Jest.
 npm init -y
@@ -36,4 +33,4 @@ Exécuter le conteneur à partir de l'image de nginx : docker run -d -p 8080:80 
 ── styles.css
 ── test.js
 
-# Accédez à l'application via l'adresse: http://localhost:8080.
+Accédez à l'application via l'adresse: http://localhost:8080.
