@@ -5,16 +5,16 @@ Nous allons configurer des tests automatiques qui s'exécutent à chaque push su
 
 # creer un repository
 
-Ajoutez tous les fichiers de votre projet au dépôt : git add .
+Ajoute tous les fichiers du projet au dépôt : git add .
 
-Faire un commit de vos fichiers : git commit -m "Initial commit"
+Faire un commit de nos fichiers : git commit -m "Initial commit"
 
 Ajoutez le repository GitHub : git config --global user.email "33767@Regis-tchicaya"
 
-Poussez votre projet local vers GitHub :git push -u origin master
+Poussez le projet local vers GitHub :git push -u origin master
 
 # Faire les tests
-Nous allons ajoutez une structure de tests avec Jest.
+Nous allons ajouter une structure de tests avec Jest.
 npm init -y
 npm install jest --save-dev
 
@@ -26,11 +26,14 @@ Construire l'image Docker : docker build -t devops-projet.
 
 Exécuter le conteneur à partir de l'image de nginx : docker run -d -p 8080:80 devops-projet
 
-# structure du repertoire
-── Dockerfile
-── index.html
-── script.js
-── styles.css
-── test.js
+# Configurer GitHub Actions
+Creation d'un dossier .github/workflows puis on  ajoute un fichier ci.yml :
+
+Ajoute nos secrets Docker Hub à GitHub Actions :
+
+Allez dans les "Settings" de notre repository.
+Clique sur "Secrets and variables" puis "Actions".
+Ajoute DOCKER_USERNAME et DOCKER_PASSWORD.
+
 
 Accédez à l'application via l'adresse: http://localhost:8080.
