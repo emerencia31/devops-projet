@@ -17,7 +17,7 @@ body {
 .center {
   /* display: none; */
   width: 350px;
-  background: rgb(118, 204, 244);
+  background: rgb(59, 64, 66);
   border-radius: 20px;
 }
 input[type="text"] {
